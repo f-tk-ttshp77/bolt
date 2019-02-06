@@ -5,19 +5,24 @@
   box-sizing: border-box;
 }
 
+img {
+  vertical-align: bottom;
+}
+
 .clearfix:after {
   clear: both;
   content: "";
   display: flex;
 }
 
-.container {
-  width: 100%;
-}
-/* レスポンシブ */
+/* 共通レスポンシブ */
 
 /* pc */
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1200px) {
+  .innerbox {
+    max-width: 1100px;
+  }
+  
   .headerWrapper {
     background: #fff;
     position: sticky;
@@ -30,7 +35,6 @@
   .header {
     margin: 0 auto;
     padding: 15px 0;
-    width: 1100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -62,7 +66,6 @@
     margin: 0 auto;
     padding: 250px 0;
     text-align: center;
-    width: 1100px;
   }
 
   .mainTitle__bgTitle {
@@ -83,13 +86,9 @@
 
   .abst {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     margin: 0 auto;
-    width: 1100px;
-  }
-
-  .abst__iphoneImg {
     padding-top: 50px;
   }
 
@@ -118,7 +117,6 @@
     margin: 0 auto;
     padding: 60px 0 70px 0;
     text-align: center;
-    width: 1100px;
   }
 
   .works__title {
@@ -191,7 +189,6 @@
     margin: 0 auto;
     padding: 70px 0 100px 0;
     text-align: center;
-    width: 1100px;
   }
 
   .skills__title {
@@ -226,7 +223,6 @@
   .sns {
     margin: 0 auto;
     padding: 200px 0;
-    width: 1100px;
   }
 
   .sns li {
@@ -252,7 +248,6 @@
   .footer {
     margin: 0 auto;
     padding: 20px 0 25px 0;
-    width: 1100px;
   }
 
   .footer__Msg {
