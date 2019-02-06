@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Lato";
+}
+
+a {
+  text-decoration: none;
+}
+
 img {
   vertical-align: bottom;
 }
@@ -15,55 +23,176 @@ img {
   display: flex;
 }
 
+
+
+
+
 /* 共通レスポンシブ */
+.headerWrapper {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: inherit;
+  z-index: 1000;
+}
+
+.header {
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__bolt {
+  color: #4e4e4e;
+}
+
+.header__contactBtn {
+  background-color: #74cfae;
+  color: #fff;
+  font-size: 12px;
+  padding: 14px 12px;
+  transition: all 0.3s;
+}
+
+.header__humMenu {
+  display: none;
+}
+
+.mainTitleWrapper {
+  background-color: #f2f2f2;
+}
+
+.mainTitle__smTitle {
+  color: #c0c0c0;
+  font-size: 30px;
+}
+
+.abstWrapper {
+  background-color: #74cfae;
+}
+
+.abst__description {
+  color: #fff;
+  text-align: center;
+  width: 620px;
+}
+
+.abst__descriptionTitle {
+  font-family: "Raleway";
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+
+.abst__descriptionMsg {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.worksWrapper {
+  background-color: #f2f2f2;
+}
+
+.works {
+  padding: 60px 0 70px 0;
+  text-align: center;
+}
+
+.works__title {
+  color: #333;
+  font-family: "Raleway";
+  font-size: 24px;
+  text-align: center;
+}
+
+.works__bottomEmail {
+  display: inline-block;
+}
+
+.works__bottomEmailMsg {
+  color: #333;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.works__bottomEmailBtn {
+  background-color: #74cfae;
+  color: #fff;
+  font-size: 12px;
+  padding: 14px 20px;
+}
+
+.skillsWrapper {
+  background-color: #4e4e4e;
+}
+
+.skills {
+  color: #fff;
+  padding: 70px 0 100px 0;
+  text-align: center;
+}
+
+.skills__title {
+  font-family: "Raleway";
+  font-size: 24px;
+  margin-bottom: 70px;
+}
+
+.skills__index {
+  display: inline-block;
+}
+
+.skills__circle:last-child {
+  margin-right: 0;
+}
+
+.skills__circle figcaption {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.snsWrapper {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.sns__btn {
+  color: #74cfae;
+  padding: 20px 0;
+}
+
+.footerWrapper {
+  background-color: #74cfae;
+}
+
+.footer {
+  padding: 20px 0 25px 0;
+}
+
+.footer__Msg {
+  color: #fff;
+  float: right;
+  font-size: 16px;
+}
+
+
+
+
 
 /* pc */
 @media screen and (min-width: 1200px) {
   .innerbox {
     max-width: 1100px;
-  }
-  
-  .headerWrapper {
-    background: #fff;
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: inherit;
-    z-index: 1000;
-  }
-
-  .header {
     margin: 0 auto;
-    padding: 15px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .header__bolt {
-    color: #4e4e4e;
-  }
-
-  .header__contactBtn {
-    background-color: #74cfae;
-    color: #fff;
-    font-size: 12px;
-    padding: 14px 12px;
-    text-decoration: none;
-    transition: all 0.3s;
   }
 
   .header__contactBtn:hover {
     color: #333;
   }
 
-  .mainTitleWrapper {
-    background-color: #f2f2f2;
-  }
-
   .mainTitle {
     font-family: "Raleway";
-    margin: 0 auto;
     padding: 250px 0;
     text-align: center;
   }
@@ -75,55 +204,11 @@ img {
     margin-bottom: 20px;
   }
 
-  .mainTitle__smTitle {
-    color: #c0c0c0;
-    font-size: 30px;
-  }
-
-  .abstWrapper {
-    background-color: #74cfae;
-  }
-
   .abst {
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
-    margin: 0 auto;
     padding-top: 50px;
-  }
-
-  .abst__description {
-    color: #fff;
-    text-align: center;
-    width: 620px;
-  }
-
-  .abst__descriptionTitle {
-    font-family: "Raleway";
-    font-size: 24px;
-    margin-bottom: 35px;
-  }
-
-  .abst__descriptionMsg {
-    font-size: 20px;
-    line-height: 28px;
-  }
-
-  .worksWrapper {
-    background-color: #f2f2f2;
-  }
-
-  .works {
-    margin: 0 auto;
-    padding: 60px 0 70px 0;
-    text-align: center;
-  }
-
-  .works__title {
-    color: #333;
-    font-family: "Raleway";
-    font-size: 24px;
-    text-align: center;
   }
 
   .works__gallary {
@@ -152,27 +237,14 @@ img {
     transition: all 0.3s;
   }
 
-  .works__bottomEmail {
-    display: inline-block;
-
-  }
-
   .works__bottomEmailMsg {
-    color: #333;
     float: left;
-    font-size: 20px;
-    line-height: 28px;
     margin-right: 90px;
     width: 660px;
   }
 
   .works__bottomEmailBtn {
-    background-color: #74cfae;
-    color: #fff;
     float: left;
-    font-size: 12px;
-    padding: 14px 20px;
-    text-decoration: none;
     transition: all 0.3s;
   }
 
@@ -180,59 +252,26 @@ img {
     color: #333;
   }
 
-  .skillsWrapper {
-    background-color: #4e4e4e;
-  }
-
-  .skills {
-    color: #fff;
-    margin: 0 auto;
-    padding: 70px 0 100px 0;
-    text-align: center;
-  }
-
-  .skills__title {
-    font-family: "Raleway";
-    font-size: 24px;
-    margin-bottom: 70px;
-  }
-
-  .skills__index {
-    display: inline-block;
-  }
-
   .skills__circle {
     float: left;
     margin-right: 180px;
   }
 
-  .skills__circle:last-child {
-    margin-right: 0;
-  }
-
-  .skills__circle figcaption {
-    font-size: 16px;
-    margin-top: 10px;
-  }
-
-  .snsWrapper {
-    background-color: #f2f2f2;
-    text-align: center;
-  }
-
   .sns {
-    margin: 0 auto;
     padding: 200px 0;
   }
 
-  .sns li {
+  .sns__list {
     display: inline-block;
+    margin: 0 auto;
+  }
+
+  .sns__list li {
+    float: left;
   }
 
   .sns__btn {
-    color: #74cfae;
     display: inline-block;
-    padding: 20px 0;
     transition: all 0.3s;
     width: 185px;
   }
@@ -240,29 +279,193 @@ img {
   .sns__btn:hover {
     background-color: #fff;
   }
-
-  .footerWrapper {
-    background-color: #74cfae;
-  }
-
-  .footer {
-    margin: 0 auto;
-    padding: 20px 0 25px 0;
-  }
-
-  .footer__Msg {
-    color: #fff;
-    float: right;
-    font-size: 16px;
-  }
 }
+
+
+
+
 
 /* tb */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .innerbox {
+    width: 97%;
+    margin: 0 auto;
+  }
 
+  .mainTitle {
+    font-family: "Raleway";
+    padding: 250px 0;
+    text-align: center;
+  }
+
+  .mainTitle__bgTitle {
+    color: #74cfae;
+    font-size: 90px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .abst {
+    padding: 50px 0 25px 0;
+  }
+
+  .abst img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .abst__description {
+    margin: 20px auto 0 auto;
+  }
+
+  .works__gallary {
+    margin: 40px auto 80px auto;
+    width: 300px;
+  }
+
+  .works__gallaryLink {
+    display: inline-block;
+  }
+
+  .works__gallaryLink:nth-child(3) {
+    margin-bottom: 80px;
+  }
+
+  .works__bottomEmail {
+    width: 97%;
+  }
+
+  .works__bottomEmailMsg {
+    margin-bottom: 40px;
+  }
+
+  .works__bottomEmailBtn {
+    display: inline-block;
+  }
+
+  .skills__circle {
+    margin-bottom:88px;
+  }
+
+  .skills__circle:last-child {
+    margin-bottom: 0;
+  }
+
+  .sns {
+    padding: 200px 0;
+  }
+
+  .sns__list {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .sns__list li {
+    float: left;
+  }
+
+  .sns__btn {
+    display: inline-block;
+    width: 185px;
+  }
 }
+
+
+
+
 
 /* sp */
 @media screen and (max-width: 767px) {
+  .innerbox {
+    width: 97%;
+    margin: 0 auto;
+  }
 
+  .header__contactBtn {
+    display: none;
+  }
+
+  .header__humMenu {
+    display: inline-block;
+    padding: 10px;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+  }
+
+  .header__humMenu div {
+    height: 2px;
+    background-color: #ddd;
+    width: 24px;
+    margin-top: 4px;
+  }
+
+  .header__humMenu div:first-child {
+    margin-top: 0;
+  }
+
+  .mainTitle {
+    font-family: "Raleway";
+    padding: 160px 0 130px 0;
+    text-align: center;
+  }
+
+  .mainTitle__bgTitle {
+    color: #74cfae;
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .abst {
+    padding: 50px 0 25px 0;
+    text-align: center;
+  }
+
+  .abst__description {
+    margin-top: 20px;
+    display:inline-block;
+    width: 97%;
+  }
+
+  .works__gallary {
+    margin: 40px auto 80px auto;
+    width: 300px;
+  }
+
+  .works__gallaryLink {
+    display: inline-block;
+  }
+
+  .works__gallaryLink:nth-child(3) {
+    margin-bottom: 80px;
+  }
+
+  .works__bottomEmail {
+    width: 97%;
+  }
+
+  .works__bottomEmailMsg {
+    margin-bottom: 40px;
+  }
+
+  .works__bottomEmailBtn {
+    display: inline-block;
+  }
+
+  .skills__circle {
+    margin-bottom:88px;
+  }
+
+  .skills__circle:last-child {
+    margin-bottom: 0;
+  }
+
+  .sns {
+    padding: 50px 15px;
+  }
+
+  .sns__btn {
+    display: inline-block;
+    width: 100%;
+  }
 }
